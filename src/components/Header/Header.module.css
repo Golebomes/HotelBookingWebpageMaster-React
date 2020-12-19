@@ -1,0 +1,77 @@
+.header_wrapper {
+
+    top: 0px;
+    position: fixed;
+    width: 100%;
+    background: white;
+    z-index: 4;
+
+}
+
+.header {
+
+    display: grid;
+    height: 80px;
+    grid-template-columns: 1fr 3fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    margin: 0 auto;
+
+}
+
+.header__bookingForm {
+
+    background: white;
+    position: absolute;
+    width: 100%;
+    z-index: 3;
+
+}
+
+.header__bookingFrom_filler {
+
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 2;
+
+}
+
+.header__grid1 {
+
+    justify-self: self-start;
+    font-weight: 500;
+    color: black;
+    font-size: 1.2rem;
+
+}
+
+.header__grid2 {
+
+    justify-self: self-end;
+
+}
+
+.header__bookingButton {
+
+    padding: 15px;
+    width: 100%;
+    font-size: 1.1rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(-90deg, var(--g2c1), var(--g2c2));
+    background-size: 200%;
+    background-position: left;
+    transition: all 0.3s;
+    color: white;
+
+}
+
+.header__bookingButton:hover {
+
+    background-position: right;
+
+}
